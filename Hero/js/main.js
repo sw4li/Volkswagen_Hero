@@ -13,3 +13,11 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+  // navbar toggle
+  let menuIcon = document.querySelector('.menu .fa-bars');
+  let menuList = document.querySelector('.menu .menus');
+
+  menuIcon.addEventListener("click",function(){
+    menuList.classList.toggle("toggle");
+  });
